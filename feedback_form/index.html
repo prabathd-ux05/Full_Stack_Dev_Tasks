@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Customer Feedback Form</h2>
+
+    <form>
+        <label>Name</label>
+        <input type="text" id="name" onkeyup="validateName()" onmouseover="highlight(this)" onmouseout="removeHighlight(this)">
+        <span id="nameError"></span>
+
+        <label>Email</label>
+        <input type="email" id="email" onkeyup="validateEmail()" onmouseover="highlight(this)" onmouseout="removeHighlight(this)">
+        <span id="emailError"></span>
+
+        <label>Feedback</label>
+        <textarea id="feedback" onkeyup="validateFeedback()" onmouseover="highlight(this)" onmouseout="removeHighlight(this)"></textarea>
+        <span id="feedbackError"></span>
+
+        <button type="button" ondblclick="submitForm()">Submit</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
