@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce Filters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="W3_S11_T3_CSS.css">
+</head>
+<body>
+
+<header>
+    <h1>ShopZone</h1>
+</header>
+
+<div class="container">
+
+    <aside class="filters">
+        <h2>Filters</h2>
+
+        <label>Price Range</label>
+        <input type="range" id="priceRange" min="500" max="5000" value="5000">
+        <p id="priceValue">Up to ₹5000</p>
+
+        <label>Brand</label>
+        <select id="brandFilter">
+            <option value="all">All</option>
+            <option value="Nike">Nike</option>
+            <option value="Adidas">Adidas</option>
+            <option value="Puma">Puma</option>
+        </select>
+
+        <label>Color</label>
+        <div class="color-box">
+            <button data-color="red"></button>
+            <button data-color="black"></button>
+            <button data-color="blue"></button>
+        </div>
+
+        <label>Rating</label>
+        <select id="ratingFilter">
+            <option value="0">All</option>
+            <option value="4">4★ & above</option>
+            <option value="3">3★ & above</option>
+        </select>
+    </aside>
+
+    <main class="products" id="productList"></main>
+
+</div>
+
+<script src="W3_S11_T3_JS.js"></script>
+</body>
+</html>
