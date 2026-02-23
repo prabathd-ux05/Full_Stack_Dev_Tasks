@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tantraz Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="W3_S12_T3_CSS.css">
+</head>
+<body>
+
+<main class="form-wrapper">
+    <h1>Tantraz Registration Form</h1>
+
+    <form>
+
+        <div class="field">
+            <label for="fullname">Full Name</label>
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter your full name"
+                required
+            >
+        </div>
+
+        <div class="field">
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@email.com"
+                required
+            >
+        </div>
+
+        <div class="field">
+            <label for="category">Participation Category</label>
+            <select
+                id="category"
+                name="category"
+                required
+            >
+                <option value="">Select your category</option>
+                <option value="individual">Individual</option>
+                <option value="team">Team</option>
+                <option value="audience">Audience</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>T-Shirt Size</label>
+            <div class="options">
+                <label><input type="radio" name="tshirt" value="s" required> S</label>
+                <label><input type="radio" name="tshirt" value="m"> M</label>
+                <label><input type="radio" name="tshirt" value="l"> L</label>
+                <label><input type="radio" name="tshirt" value="xl"> XL</label>
+            </div>
+        </div>
+
+        <div class="field">
+            <label>Technical Interests</label>
+            <div class="options">
+                <label><input type="checkbox" name="interest" value="ai"> AI</label>
+                <label><input type="checkbox" name="interest" value="web"> Web Development</label>
+                <label><input type="checkbox" name="interest" value="cloud"> Cloud Computing</label>
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="expectations">Expectations / Suggestions</label>
+            <textarea
+                id="expectations"
+                name="expectations"
+                rows="4"
+                maxlength="200"
+                placeholder="Share your expectations or suggestions (max 200 characters)"
+            ></textarea>
+        </div>
+
+        <button type="submit">Register</button>
+
+    </form>
+</main>
+
+</body>
+</html>

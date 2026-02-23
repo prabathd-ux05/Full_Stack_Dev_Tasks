@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Blog Platform</title>
+    <link rel="stylesheet" href="W3_S11_T2_CSS.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h1>MediaBlog</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Articles</a>
+        <a href="#">Videos</a>
+        <a href="#">Podcasts</a>
+    </nav>
+</header>
+
+<main class="container">
+
+    <!-- Blog Post -->
+    <article class="blog-card">
+        <h2>Future of Web Development</h2>
+        <p class="meta">By Admin • Feb 2026</p>
+        <p class="content">
+            Web development is rapidly evolving with new frameworks, AI-driven tools,
+            and immersive user experiences.
+        </p>
+
+        <!-- Audio Player -->
+        <div class="media-box">
+            <h3>🎧 Listen to this article</h3>
+            <audio controls>
+                <source src="audio/sample-audio.mp3" type="audio/mpeg">
+                Your browser does not support audio playback.
+            </audio>
+        </div>
+    </article>
+
+    <!-- Video Section -->
+    <section class="video-card">
+        <h2>📺 Featured Video</h2>
+        <video controls poster="video/poster.jpg">
+            <source src="video/sample-video.mp4" type="video/mp4">
+            Your browser does not support video streaming.
+        </video>
+        <p class="video-desc">
+            Watch our detailed breakdown on modern UI/UX and performance optimization.
+        </p>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 MediaBlog • All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

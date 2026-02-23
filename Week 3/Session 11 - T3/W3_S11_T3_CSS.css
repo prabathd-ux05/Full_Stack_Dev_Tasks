@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f2f6;
+}
+
+header {
+    background: #2f3542;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    max-width: 1100px;
+    margin: 30px auto;
+    gap: 20px;
+}
+
+.filters {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.filters label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.filters select,
+.filters input {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.color-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.color-box button {
+    width: 25px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.color-box button[data-color="red"] { background: red; }
+.color-box button[data-color="black"] { background: black; }
+.color-box button[data-color="blue"] { background: blue; }
+
+.products {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.product h3 {
+    margin-bottom: 8px;
+}
+
+.product span {
+    display: block;
+    color: #555;
+}
